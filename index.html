@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishwas Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #e6f7ff; /* Light blue background */
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeInDown 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .projects, .reviews {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: slideUp 1.5s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    /* Portfolio Image Section */
+    .portfolio-image {
+      margin: 40px auto;
+      text-align: center;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    .portfolio-image img {
+      max-width: 80%;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.5s ease, filter 0.5s ease;
+    }
+
+    .portfolio-image img:hover {
+      transform: scale(1.1) rotate(2deg);
+      filter: brightness(1.2) saturate(1.3);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vishwas Portfolio</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Portfolio Image Section -->
+  <div class="portfolio-image">
+    <!-- Replace with actual image path or S3 URL -->
+    <img src="https://shiv-dem-bucket-704050.s3.us-east-1.amazonaws.com/portfolio_new.png" alt="Portfolio Preview">
+  </div>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>Personal Blog Website built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>E-commerce Store using React and Node.js.</p>
+      </div>
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>Portfolio Website showcasing animations and responsive design.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2>Reviews</h2>
+    <div class="reviews">
+      <div class="card">
+        <p>"Vishwas is a talented developer who delivers projects on time!"</p>
+        <strong>- Client A</strong>
+      </div>
+      <div class="card">
+        <p>"Amazing creativity and attention to detail in every project."</p>
+        <strong>- Client B</strong>
+      </div>
+      <div class="card">
+        <p>"Professional, reliable, and highly skilled in web development."</p>
+        <strong>- Client C</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: vishwas@example.com</p>
+    <p>LinkedIn: linkedin.com/in/vishwas</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vishwas Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
